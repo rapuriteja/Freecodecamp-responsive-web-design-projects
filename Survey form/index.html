@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+            Thank you for taking the time to help us improve the platform
+        </p>
+        <div class="main-content">
+            <div class="form-content">
+                <from id="survey-from">
+                    <label for="name" id="name-lable">Name</label>
+                    <input id="name" type="text" required placeholder="Enter your name"/>
+
+                    <label for="email" id="email-lable">Email</label>
+                    <input id="email" type="email" required placeholder="Enter your email"/>
+
+                    <label for="number" id="number-lable">Enter your rate from 1 to 10</label>
+                    <input id="number" type="number" max="10" min="1" required placeholder="Enter your rate"/>
+
+                    <label for="dropdown">Which option best describes your current role?</label>
+                    <select id="dropdown" >
+                        <option value="studen">Student</option>
+                        <option value="full-time-job">Full Time job</option>
+                        <option value="full-time-learner">Full Time learner</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                        <option value="other">Other</option>
+                        <option value="" disabled selected>Select current role</option>
+                    </select>
+                    
+                    <fieldset>
+                        <legend>Would you recommned freeCodeCamp to friend?</legend>
+
+                        <input type="radio" name="action" checked id="definitely" value="definitely"/>
+                        <lable for="definitely">Definitely</lable>
+                        <br>
+                        <input type="radio" name="action" checked id="maybe" value="maybe"/>
+                        <lable for="maybe">Maybe</lable>
+                        <br>
+                        <input type="radio" name="action" checked id="not-sure" value="note-sure"/>
+                        <lable for="not-sure">Not sure</lable>
+                   </fieldset>
+
+                   <p>What would you like to see improved? (Check all that apply)</p>
+
+                   <input type="checkbox" id="Front-end-Projects" name="Front-end-Projects" value="Front-end-Projects">
+                   <label for="Front-end-Projects">Front-end Projects</label>
+                   <br>
+                   <input type="checkbox" id="Back-end-Projects" name="Back-end-Projects" value="Back-end-Projects">
+                   <label for="Back-end-Projects">Back-end Projects</label>
+                   <br>
+                   <input type="checkbox" id="Data-Visualization" name="Data-Visualization" value="Data-Visualization">
+                   <label for="Data-Visualization">Data Visualization</label>
+                   <br>
+                   <input type="checkbox" id="Challenges" name="Challenges" value="Challenges">
+                   <label for="Challenges">Challenges</label>
+                   <br>
+                   <input type="checkbox" id="Open-Source-Community" name="Open-Source-Community" value="Open-Source-Community">
+                   <label for="Open-Source-Community">Open Source Community</label>
+                   <br>
+                   <input type="checkbox" id="Gitter-help-rooms" name="Gitter-help-rooms" value="Gitter-help-rooms">
+                   <label for="Gitter-help-rooms">Gitter help rooms</label>
+                   <br>
+                   <input type="checkbox" id="Videos" name="Videos" value="Videos">
+                   <label for="Videos">Videos</label>
+                   <br>
+                   <input type="checkbox" id="City-Meetups" name="City-Meetups" value="City-Meetups">
+                   <label for="City-Meetups">City Meetups</label>
+                   <br>
+                   <input type="checkbox" id="Wiki" name="Wiki" value="Wiki">
+                   <label for="Wiki">Wiki</label>
+                   <br>
+                   <input type="checkbox" id="Forum" name="Forum" value="Forum">
+                   <label for="Forum">Forum</label>
+                   <br>
+                   <input type="checkbox" id="Additional-Courses" name="Additional-Courses" value="Additional-Courses">
+                   <label for="Additional-Courses">Additional Courses</label>
+
+                   <p>Any comments or suggestions?</p>
+                   <textarea rows="4" cols="50" id="comment">Enter your commnet here...</textarea>
+                   
+                   <button type="submit" id="submit">submit</button>
+                </from>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
